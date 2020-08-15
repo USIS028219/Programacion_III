@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Prueba</string>
+    <string-array name="operaciones">
+        <item>Seleccione un elemento</item>
+        <item>Suma</item>
+        <item>Resta</item>
+        <item>Multiplicacion</item>
+        <item>Division</item>
+        <item>Porcentaje</item>
+        <item>Exponenciacion</item>
+        <item>Factoreo</item>
+        <item>Modulo</item>
+    </string-array>
+</resources>
