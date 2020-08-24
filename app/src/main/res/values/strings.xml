@@ -1,19 +1,20 @@
 <resources>
     <string name="app_name">Prueba</string>
     <string-array name="Longitud">
-        <item>Seleccione un elemento</item>
-        <item>Nanometros</item>
-        <item>Milimetros</item>
-        <item>Centimetros</item>
-        <item>Decimetros</item>
-        <item>Metros</item>
-        <item>Decametros</item>
-        <item>Hectometro</item>
+        <item>Metro</item>
         <item>Kilometro</item>
+        <item>Centimetro</item>
+        <item>Milímetro</item>
+        <item>Micrómetro</item>
+        <item>Nanómetro</item>
+        <item>Milla</item>
+        <item>Yarda</item>
+        <item>Pie</item>
+        <item>Pulgada</item>
+        <item>Milla Naútica</item>
     </string-array>
 
     <string-array name="Almacenamiento">
-        <item>Seleccione un elemento</item>
         <item>Byte</item>
         <item>Kilobyte</item>
         <item>Megabyte</item>
@@ -25,7 +26,6 @@
     </string-array>
 
     <string-array name="Monedas">
-        <item>Seleccione un elemento</item>
         <item>Dolar EUA</item>
         <item>Euro</item>
         <item>Yen Japones</item>
@@ -39,7 +39,6 @@
     </string-array>
 
     <string-array name="Peso">
-        <item>Seleccione un elemento</item>
         <item>Miligramo</item>
         <item>Gramo</item>
         <item>Decagramos</item>
@@ -51,14 +50,12 @@
     </string-array>
 
     <string-array name="Datos">
-        <item>Seleccione un elemento</item>
         <item>Bps</item>
         <item>Kbps</item>
         <item>Mbps</item>
     </string-array>
 
     <string-array name="Volumen">
-        <item>Seleccione un elemento</item>
         <item>Milimetro Cúbico</item>
         <item>Centimetro Cúbico</item>
         <item>Decimetro Cúbico</item>
@@ -70,7 +67,6 @@
     </string-array>
 
     <string-array name="Tiempo">
-        <item>Seleccione un elemento</item>
         <item>Milsesima de Segundo</item>
         <item>Segundo</item>
         <item>Minuto</item>
