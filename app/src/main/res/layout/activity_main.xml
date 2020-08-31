@@ -202,23 +202,17 @@
             android:id="@+id/txtDe"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="140dp"
             android:text="De" />
 
         <TextView
             android:id="@+id/txtA"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:layout_marginLeft="140dp"
+            android:layout_marginTop="230dp"
             android:text="A" />
-
-        <EditText
-            android:id="@+id/txtCantidad"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:ems="10"
-            android:layout_marginLeft="160dp"
-            android:layout_marginTop="70dp"
-            android:inputType="textPersonName"
-            android:text="Name" />
 
         <Button
             android:id="@+id/button"
@@ -243,6 +237,16 @@
             android:layout_marginLeft="180dp"
             android:layout_marginTop="400dp"
             android:text="TextView" />
+
+        <EditText
+            android:id="@+id/txtCantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="160dp"
+            android:layout_marginTop="65dp"
+            android:ems="10"
+            android:hint="Ingrese Cantidad"
+            android:inputType="numberDecimal" />
     </RelativeLayout>
 
 </RelativeLayout>
