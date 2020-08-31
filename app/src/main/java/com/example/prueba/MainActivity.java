@@ -1,6 +1,7 @@
 package com.example.prueba;
 
 import android.app.Activity;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.textclassifier.ConversationAction;
 import android.widget.TabHost;
@@ -8,14 +9,18 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Spinner;
 import android.widget.Toast;
+import android.widget.TabHost.TabSpec;
+
 
 import androidx.annotation.NonNull;
+import androidx.annotation.RequiresApi;
 
 public class MainActivity extends Activity {
 
     TabHost tbhConversores;
 
 
+    @RequiresApi(api = Build.VERSION_CODES.LOLLIPOP)
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,13 +29,15 @@ public class MainActivity extends Activity {
         tbhConversores = (TabHost)findViewById(R.id.tbhConversor);
         tbhConversores.setup();
 
-        tbhConversores.addTab(tbhConversores.newTabSpec("Almacenamiento").setContent(R.id.tabAlmacenamiento).setIndicator("Almacenamiento", null));
-        tbhConversores.addTab(tbhConversores.newTabSpec("Peso").setContent(R.id.tabPeso).setIndicator("Peso", null));
-        tbhConversores.addTab(tbhConversores.newTabSpec("Longitud").setContent(R.id.tabLongitud).setIndicator("Longitud", null));
-        tbhConversores.addTab(tbhConversores.newTabSpec("Volumen").setContent(R.id.tabVolumen).setIndicator("Volumen", null));
-        tbhConversores.addTab(tbhConversores.newTabSpec("Datos").setContent(R.id.tabDatos).setIndicator("Datos", null));
-        tbhConversores.addTab(tbhConversores.newTabSpec("Moneda").setContent(R.id.tabMoneda).setIndicator("Moneda", null));
-        tbhConversores.addTab(tbhConversores.newTabSpec("Tiempo").setContent(R.id.tabTiempo).setIndicator("Tiempo", null));
+
+
+        tbhConversores.addTab(tbhConversores.newTabSpec("Almacenamiento").setContent(R.id.tabAlmacenamiento).setIndicator("",getDrawable(R.drawable.almacenamiento)));
+        tbhConversores.addTab(tbhConversores.newTabSpec("Peso").setContent(R.id.tabPeso).setIndicator("",getDrawable(R.drawable.peso)));
+        tbhConversores.addTab(tbhConversores.newTabSpec("Longitud").setContent(R.id.tabLongitud).setIndicator("",getDrawable(R.drawable.longitud)));
+        tbhConversores.addTab(tbhConversores.newTabSpec("Volumen").setContent(R.id.tabVolumen).setIndicator("",getDrawable(R.drawable.volumen)));
+        tbhConversores.addTab(tbhConversores.newTabSpec("Datos").setContent(R.id.tabDatos).setIndicator("",getDrawable(R.drawable.datos)));
+        tbhConversores.addTab(tbhConversores.newTabSpec("Moneda").setContent(R.id.tabMoneda).setIndicator("",getDrawable(R.drawable.moneda)));
+        tbhConversores.addTab(tbhConversores.newTabSpec("Tiempo").setContent(R.id.tabTiempo).setIndicator("",getDrawable(R.drawable.tiempo)));
 
 
 

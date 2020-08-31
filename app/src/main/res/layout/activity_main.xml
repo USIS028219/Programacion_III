@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="#8BC34A"
+    android:background="@color/colorAccent"
     android:foreground="@android:color/transparent"
     android:visibility="visible"
     tools:context=".MainActivity">
@@ -33,6 +33,7 @@
                     android:id="@+id/tabLongitud"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
+                    android:icon="@drawable/longitud"
                     android:orientation="vertical">
 
                     <Spinner
@@ -79,7 +80,8 @@
                 <RelativeLayout
                     android:id="@+id/tabAlmacenamiento"
                     android:layout_width="match_parent"
-                    android:layout_height="match_parent">
+                    android:layout_height="match_parent"
+                    android:icon="@drawable/ic_almacenamiento">
 
                     <Spinner
                         android:id="@+id/spnAlmacenamientoA"
@@ -118,7 +120,8 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="170dp"
-                        android:layout_marginTop="170dp" />
+                        android:layout_marginTop="170dp"
+                        android:entries="@array/Peso" />
 
                 </RelativeLayout>
 
@@ -132,14 +135,16 @@
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="170dp"
-                        android:layout_marginTop="80dp" />
+                        android:layout_marginTop="80dp"
+                        android:entries="@array/Volumen" />
 
                     <Spinner
                         android:id="@+id/spnVolumenB"
                         android:layout_width="150dp"
                         android:layout_height="wrap_content"
                         android:layout_marginLeft="170dp"
-                        android:layout_marginTop="170dp" />
+                        android:layout_marginTop="170dp"
+                        android:entries="@array/Volumen" />
 
                 </RelativeLayout>
 
@@ -226,17 +231,17 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="100dp"
+            android:layout_marginLeft="80dp"
             android:layout_marginTop="80dp"
-            android:text="Cantidad" />
+            android:text="Cantidad"
+            android:textSize="18sp" />
 
         <TextView
             android:id="@+id/txtRespuesta"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="180dp"
-            android:layout_marginTop="400dp"
-            android:text="TextView" />
+            android:layout_marginTop="400dp" />
 
         <EditText
             android:id="@+id/txtCantidad"
